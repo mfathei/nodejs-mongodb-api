@@ -25,7 +25,7 @@ app.get('/api/genres', function(req, res){
         if(err){
             throw err;
         }
-        res.json(genres);
+        res.status(200).json(genres);
     });
 });
 
@@ -34,7 +34,7 @@ app.get('/api/genres/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.json(genre);
+        res.status(200).json(genre);
     });
 });
 
@@ -44,7 +44,7 @@ app.post('/api/genres', function(req, res){
         if(err){
             throw err;
         }
-        res.json(genre);
+        res.status(201).json(genre);
     });
 });
 
@@ -55,7 +55,7 @@ app.put('/api/genres/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.json(genre);
+        res.status(202).json(genre);
     });
 });
 
@@ -65,7 +65,7 @@ app.delete('/api/genres/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.json(genre);
+        res.status(204).json(genre);
     });
 });
 
@@ -76,7 +76,7 @@ app.get('/api/books', function(req, res){
         if(err){
             throw err;
         }
-        res.json(books);
+        res.status(200).json(books);
     });
 });
 
@@ -85,7 +85,7 @@ app.get('/api/books/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.json(book);
+        res.status(200).json(book);
     });
 });
 
@@ -95,7 +95,7 @@ app.post('/api/books', function(req, res){
         if(err){
             throw err;
         }
-        res.json(book);
+        res.status(201).json(book);
     });
 });
 
@@ -106,7 +106,7 @@ app.put('/api/books/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.json(book);
+        res.status(202).json(book);
     });
 });
 
@@ -116,7 +116,7 @@ app.delete('/api/books/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.json(book);
+        res.status(204).json(book);
     });
 });
 // ===================================
